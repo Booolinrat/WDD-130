@@ -1,0 +1,17 @@
+body {
+    height: 685px;
+    border: 10px double black;
+    padding-left: 10px double green;
+    border-bottom: 10px double blue;
+    text-align:center;
+    background-color: aquamarine;
+}
+
+h1.p {
+    text-decoration-color:rgb(130, 44, 235);
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
