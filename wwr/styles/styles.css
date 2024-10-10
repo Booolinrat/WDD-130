@@ -8,15 +8,15 @@ header {
     background-color: #766153;
 }
 
-.logo_link {
+#logo_link {
     width: 80px;
 }
 
-#hero-box {
-    width: 100;%
+#hero_box img{
+    width: 100%;
 }
 
-#icon{
+.icon{
     width: 80px;
 }
 
@@ -40,13 +40,13 @@ nav a:visited {
     color: #373d20;
 }
 
-.book, .join {
+.book, .join_button {
     background-color: #766153;
     color: #373d20;
     text-decoration: none;
 }
 
-.book:hover, .join:hover {
+.book:hover, .join_button:hover {
     background-color: bisque;
     color: #766153;
 }
@@ -55,7 +55,7 @@ nav a:visited {
     background-color: #373d20;
 }
 
-.hero-msg {
+#hero-msg {
     background: #766153;
 }
 
@@ -85,6 +85,10 @@ main section {
 
 .join_button {
     text-decoration: none;
+}
+
+#bottom_text{
+    background-color: #373d20;
 }
 
 footer{
