@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 body #content{
       max-width: 1600px;
       margin: auto 0;
       background-color: #717744;
+      font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+      font-size: 150%;
+      margin: 0;
+      padding: 0;
 }
 
 header {
     background-color: #766153;
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+main section img{
+    box-sizing: border-box;
 }
 
 #logo_link {
     width: 80px;
+    padding-top: 5px;
 }
 
 #hero_box img{
@@ -18,12 +32,22 @@ header {
 
 .icon{
     width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
 }
 
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -38,12 +62,20 @@ nav a:visited {
 
 .home-title, h4 {
     color: #373d20;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    padding-top: .5em;
+    margin-top: 10px;
 }
 
 .book, .join_button {
-    background-color: #766153;
+    background-color: #717744;
     color: #373d20;
     text-decoration: none;
+    font-size: 15px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join_button:hover {
@@ -55,19 +87,25 @@ nav a:visited {
     background-color: #373d20;
 }
 
-#hero-msg {
+#msg {
     background: #766153;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: white;
+    margin: 0;
 }
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
+
 }
 
-#hero-msg h1, #hero-msg h4 {
+#msg h1, #msg h4 {
     text-align: center;
 }
 
@@ -88,13 +126,20 @@ main section {
 }
 
 #bottom_text{
-    background-color: #373d20;
+    background-color: #766153;
+    padding-bottom: 1em;
 }
 
 footer{
     background-color: #373d20;
     color: white;
     text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
 
 footer a{
