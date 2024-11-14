@@ -1,0 +1,84 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 2fr 4fr 1fr;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+nav li{
+    display: grid;
+    grid-column: 3/5;
+    grid-row: 1;
+    margin: 15%;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    background: white;
+    border: 2px purple solid;
+    overflow: hidden;
+}
+
+.city_img{
+    width: 390px;
+}
+
+#week{
+    color: blue;
+    text-align: center;
+}
+
+#post{
+    text-align: center;
+
+}
+
+#paragraph{
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.words{
+    color: #8F848F;
+    display: grid;
+    grid-row: 3;
+}
+
+#post{
+    color:black;
+}
+
+.bottom{
+    height: 88px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 4;
+    background: #3F5B8B;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 -6px;
+    word-spacing: 5000px;
+    fill: #3F5B8B;
+}
+
+
+
+
+#read{
+    color:white;    
+    border: 1px white solid;
+}
+
+#comment{
+    color:white;
+    border: 1px white solid;
+}
+
+#views{
+    color:white;
+    border: 1px white solid;
+}
