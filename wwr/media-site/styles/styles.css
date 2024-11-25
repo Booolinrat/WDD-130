@@ -1,0 +1,316 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#cool-logo img {
+    max-height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F4E9D3; /* Updated for better visibility */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* Adds slight glow for better visibility */
+}
+
+nav a:hover {
+    color: #660033;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: flex-start; /* Align hero elements to the left */
+    align-items: center; /* Vertically center content */
+    padding: 0 20px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+#hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure it covers the space */
+    z-index: 0;
+}
+
+#hero-img img {
+    width: 100%; /* Make the image 95% of the width instead of 100% */
+    height: 100%; /* Reduce the height slightly as well */
+    object-fit: cover; /* Stretches and maintains aspect ratio */
+    margin: auto; /* Center the image */
+}
+
+#Hero-msg {
+    position: relative;
+    z-index: 2; /* Ensure text is on top of the image */
+    color: #333;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 20px;
+    max-width: 100%; /* Allow it to take up full width */
+    text-align: left;
+    box-shadow: none; /* Remove box shadow */
+    border-radius: 0; /* Remove any border radius */
+}
+
+#Hero-msg img{
+    max-width: 1450px;
+    margin-bottom: 20px;
+}
+
+#Hero-msg h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#Hero-msg p {
+    font-size: 1.2em;
+}
+
+.advertise-button {
+    margin-top: 15px;
+}
+
+.advertise-button a {
+    display: inline-block;
+    width: 200px; /* Set a wider width for a rectangle */
+    height: 60px; /* Short height to avoid being too tall */
+    text-align: center;
+    line-height: 60px; /* Vertically center the text */
+    background-color: #F4E9D3; /* Background color */
+    color: #660033; /* Text color */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.advertise-button a:hover {
+    background-color: #660033; /* Background color on hover */
+    color: #F4E9D3; /* Text color on hover */
+}
+
+
+
+
+/* Connect Image */
+#connect-img img {
+    max-width: 100%; /* Adjust the percentage to control the width */
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure proper centering */
+}
+
+#mid-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #333, #000); /* Gradient background */
+    color: #fff; /* White text */
+}
+
+#mid-nav h2 {
+    font-size: 1.5rem;
+    max-width: 70%; /* Limit width for better alignment */
+    line-height: 1.4;
+}
+
+.connect-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #fff; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+.connect-button a:hover {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text */
+}
+
+/* Connecting the Ag Industry section */
+#connection {
+    position: relative;
+    background-image: url('images/Walnuts-Harvest-slim.jpg'); /* Walnut background image */
+    background-size: cover; /* Cover entire section */
+    background-position: center top; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    height: 100vh; /* Section takes up full viewport height */
+    padding: 0; /* Remove padding to make walnut image fill the whole section */
+    overflow: hidden; /* Prevent elements from overflowing outside */
+}
+
+/* Large heading on the walnut image */
+#connection h2 {
+    font-size: 2.5em; /* Large font for heading */
+    position: absolute;
+    top: 10%; /* Position heading towards the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure heading stays on top */
+    margin: 0;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: shadow for readability */
+}
+
+/* Content blocks container */
+#connection .content-container {
+    position: absolute;
+    top: 40%; /* Start below the heading */
+    left: 50%;
+    transform: translateX(-50%); /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center blocks horizontally */
+    gap: 20px; /* Space between blocks */
+    z-index: 3; /* Ensure blocks are above the image */
+    width: 90%; /* Ensure container stays within the section width */
+    max-width: 1200px; /* Optional: set a max width for better alignment */
+}
+
+/* Individual content blocks */
+#connection .content-container div {
+    flex: 1 1 calc(25% - 20px); /* Responsive: 4 blocks side-by-side, adjust for padding */
+    max-width: 250px; /* Limit block width */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #connection h2 {
+        font-size: 2em; /* Adjust heading size */
+    }
+
+    #connection .content-container {
+        top: 30%; /* Adjust position of content blocks */
+        flex-direction: column; /* Stack content blocks vertically */
+        align-items: center;
+    }
+
+    #connection .content-container div {
+        width: 80%; /* Make blocks take up most of the width */
+        margin-bottom: 20px; /* Add space between stacked blocks */
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h1, footer h2, footer h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+footer nav a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        height: 70vh;
+    }
+
+    #Hero-msg {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    #Hero-msg img {
+        max-width: 200px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
