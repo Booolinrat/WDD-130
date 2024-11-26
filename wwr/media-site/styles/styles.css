@@ -1,3 +1,5 @@
+/* Code has been reviewed and modified by ChatGPT. */
+
 /* General Reset */
 * {
     margin: 0;
@@ -17,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -36,10 +38,10 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #F4E9D3; /* Updated for better visibility */
+    color: #F4E9D3; 
     font-weight: bold;
     transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* Adds slight glow for better visibility */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); 
 }
 
 nav a:hover {
@@ -50,10 +52,10 @@ nav a:hover {
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full height of the viewport */
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: flex-start; /* Align hero elements to the left */
-    align-items: center; /* Vertically center content */
+    height: 100vh; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
     padding: 0 20px;
     background-color: #f8f8f8;
     box-sizing: border-box;
@@ -66,7 +68,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -76,27 +78,27 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure it covers the space */
+    object-fit: cover; 
     z-index: 0;
 }
 
 #hero-img img {
-    width: 100%; /* Make the image 95% of the width instead of 100% */
-    height: 100%; /* Reduce the height slightly as well */
-    object-fit: cover; /* Stretches and maintains aspect ratio */
-    margin: auto; /* Center the image */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    margin: auto; 
 }
 
 #Hero-msg {
     position: relative;
-    z-index: 2; /* Ensure text is on top of the image */
+    z-index: 2; 
     color: #333;
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0);
     padding: 20px;
-    max-width: 100%; /* Allow it to take up full width */
+    max-width: 100%; 
     text-align: left;
-    box-shadow: none; /* Remove box shadow */
-    border-radius: 0; /* Remove any border radius */
+    box-shadow: none;
+    border-radius: 0;
 }
 
 #Hero-msg img{
@@ -119,22 +121,22 @@ nav a:hover {
 
 .advertise-button a {
     display: inline-block;
-    width: 200px; /* Set a wider width for a rectangle */
-    height: 60px; /* Short height to avoid being too tall */
+    width: 200px; 
+    height: 60px; 
     text-align: center;
-    line-height: 60px; /* Vertically center the text */
-    background-color: #F4E9D3; /* Background color */
-    color: #660033; /* Text color */
+    line-height: 60px; 
+    background-color: #F4E9D3; 
+    color: #660033; 
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 10px; /* Optional: rounded corners */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 10px; 
+    transition: all 0.3s ease; 
 }
 
 .advertise-button a:hover {
-    background-color: #660033; /* Background color on hover */
-    color: #F4E9D3; /* Text color on hover */
+    background-color: #660033; 
+    color: #F4E9D3; 
 }
 
 
@@ -142,19 +144,20 @@ nav a:hover {
 
 /* Connect Image */
 #connect-img img {
-    max-width: 100%; /* Adjust the percentage to control the width */
+    max-width: 100%; 
     height: auto;
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure proper centering */
+    margin: 0 auto; 
+    display: block; 
 }
 
 #mid-nav {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: linear-gradient(90deg, #333, #000); /* Gradient background */
-    color: #fff; /* White text */
+    background: linear-gradient(90deg, #333, #000); 
+    color: #fff; 
 }
 
 .main {
@@ -165,7 +168,7 @@ nav a:hover {
 
 #mid-nav h2 {
     font-size: 1.5rem;
-    max-width: 70%; /* Limit width for better alignment */
+    max-width: 70%; 
     line-height: 1.4;
 }
 
@@ -189,7 +192,7 @@ nav a:hover {
 #connection {
     margin: 0;
     position: relative;
-    background-image: url('../images/Walnuts-Harvest-slim.jpg'); /* Ensure the path is correct */
+    background-image: url('../images/Walnuts-Harvest-slim.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,66 +234,244 @@ nav a:hover {
 }
 
 
+    
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* Section for Each Form Field */
+section {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+section h1 {
+    font-size: 1.5em; 
+    color: #660033; 
+}
+
+.content-container h1{
+    color: white;
+}
+
+section label {
+    font-weight: bold;
+}
+
+/* Input Fields (Text, Email, Tel) */
+section input[type="text"],
+section input[type="email"],
+section input[type="tel"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* For Radio and Checkbox inputs */
+section input[type="radio"],
+section input[type="checkbox"] {
+    width: auto; 
+    margin-right: 10px; 
+}
+
+/* Submit Button */
+#submit {
+    background-color: #660033; 
+    color: #fff; 
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; 
+    margin: 20px auto;
+}
+
+#submit:hover {
+    background-color: #444; 
+}
+
+/* Error Messages (if any) */
+.error-message {
+    color: red; 
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Responsive Form Layout */
+@media (max-width: 768px) {
+    form {
+        padding: 20px; 
+    }
+
+    #submit {
+        width: 100%; 
+    }
+}
+
+/* Main Section for Contact Page - Now with ID #adver */
+#adver {
+    padding: 40px 20px;
+    margin-top: 60px; 
+    background-color: #fff;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 30px; 
+}
+
+/* Heading for Meet The Team */
+#adver h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #660033; 
+    margin-bottom: 40px; 
+    width: 100%; 
+}
+
+/* Card Container - General Layout */
+#adver section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+    max-width: 300px; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #660033; 
+    flex: 1 1 250px; 
+    min-height: 400px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* Add a cool border with color on hover */
+#adver section:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    border-color: #990033; 
+}
+
+/* Section Titles (h2) inside Cards */
+#adver section h2 {
+    font-size: 1.8em;
+    color: #660033; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+/* Images inside the Cards */
+#adver section img {
+    width: 80%; 
+    height: auto;
+    border-radius: 8px; 
+    max-width: 200px; 
+    object-fit: cover; 
+}
+
+
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    #adver {
+        padding: 20px;
+        flex-direction: column; 
+        justify-content: flex-start;
+    }
+
+    #adver section {
+        max-width: 100%; 
+        margin: 20px 0; 
+        min-height: 300px; 
+    }
+
+    #adver h1 {
+        font-size: 2em; 
+    }
+
+    /* Ensure cards adjust correctly on small screens */
+    #adver section img {
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
+
 
 /* Footer */
 footer {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
+    background-color: #333; 
+    color: #fff; 
     padding: 20px;
     font-size: 0.9rem;
 }
 
 .footer-container {
-    display: flex; /* Flexbox layout for columns */
+    display: flex; 
     justify-content: space-between;
-    flex-wrap: wrap; /* Wrap for responsiveness */
+    flex-wrap: wrap; 
     margin-bottom: 20px;
 }
 
 .footer-column {
-    flex: 1 1 calc(33.33% - 20px); /* Three equal columns with spacing */
+    flex: 1 1 calc(33.33% - 20px); 
     margin: 10px;
 }
 
 .footer-column h1, .footer-column h2, .footer-column h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #f4e9d3; /* Lighter color for headings */
+    color: #f4e9d3; 
 }
 
 .footer-column nav {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     gap: 5px;
 }
 
 .footer-column nav a {
-    color: #ccc; /* Light text color */
+    color: #ccc; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-column nav a:hover {
-    color: #f4e9d3; /* Highlight color on hover */
+    color: #f4e9d3; 
 }
 
 .footer-column p {
-    line-height: 1.5; /* Spacing for readability */
+    line-height: 1.5; 
 }
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between; /* Space between nav and copyright */
+    justify-content: space-between; 
     align-items: center;
-    border-top: 1px solid #555; /* Divider line */
+    border-top: 1px solid #555; 
     padding-top: 10px;
-    flex-wrap: wrap; /* Wrap for small screens */
-    gap: 10px; /* Spacing for wrapped items */
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 
 .footer-bottom nav {
     display: flex;
-    gap: 15px; /* Spacing between nav links */
+    gap: 15px; 
 }
 
 .footer-bottom nav a {
@@ -301,34 +482,32 @@ footer {
 }
 
 .footer-bottom nav a:hover {
-    color: #f4e9d3; /* Highlight color on hover */
+    color: #f4e9d3; 
 }
 
 .footer-bottom p {
     text-align: right;
-    font-size: 0.8rem; /* Slightly smaller text */
+    font-size: 0.8rem; 
     color: #ccc;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Stack columns vertically */
+        flex-direction: column; 
         align-items: flex-start;
     }
 
     .footer-column {
-        flex: 1 1 100%; /* Full width */
+        flex: 1 1 100%; 
     }
 
     .footer-bottom {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         text-align: center;
     }
 
     .footer-bottom p {
-        text-align: center; /* Center copyright on small screens */
+        text-align: center; 
     }
 }
-
-
